@@ -1,7 +1,7 @@
 @font-face {
     font-family: odin_header;
     src: url(res/Norse-Bold.otf);
-  }
+}
 
 .container {
     display: grid;
@@ -10,14 +10,14 @@
 }
 
 .container_banner {
-position: absolute;
-width: 100%;
-background: black;
-opacity: 0.7;
-display: flex;
-top: 10rem;
-justify-content: center;
-align-content: center;
+    position: absolute;
+    width: 100%;
+    background: black;
+    opacity: 0.7;
+    display: flex;
+    top: 10rem;
+    justify-content: center;
+    align-content: center;
 }
 
 
@@ -42,17 +42,19 @@ h2 {
     width: 100%;
     grid-row: 1 / span 3;
 }
-.img{
+
+.img {
     width: auto;
     height: 100%;
     background-image: url(img/halie-west-25xggax4bSA-unsplash.jpg);
-    background-size: auto; /* oder "100% auto;" um die volle Höhe und variable Breite des ersten Grid-Elements zu haben*/
-    }
+    background-size: auto;
+    /* oder "100% auto;" um die volle Höhe und variable Breite des ersten Grid-Elements zu haben*/
+}
 
-    .credit {
-        position: absolute;
-        bottom: 1rem;
-        left: 9rem;
-        color: white;
-        font-size: 0.8rem;
-    }
+.credit {
+    position: absolute;
+    bottom: 1rem;
+    left: 9rem;
+    color: white;
+    font-size: 0.8rem;
+}
