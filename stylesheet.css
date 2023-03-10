@@ -3,9 +3,10 @@
     src: url(res/Norse-Bold.otf);
 }
 
+
 .container {
     display: grid;
-    grid-template-columns: [first] 500px [line2] 600px [end];
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
     grid-template-rows: repeat(3, 250px);
 }
 
@@ -17,38 +18,62 @@
     display: flex;
     top: 10rem;
     justify-content: center;
-    align-content: center;
+	align-items: center;
 }
 
 
 .logo {
-    width: 10%;
-    height: 10%;
+	width: min(20%, 75px);
+	height: min(20%, 75px);
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
 
 h2 {
     font-family: odin_header, Arial;
-    font-size: 2rem;
+    font-size: 3rem;
     color: white;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
 
+h3 {
+	margin-left: 2rem;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.5rem;
+}
+
+.header_container {
+	grid-column: 2 / span 2;
+	grid-row-start: 1;
+	grid-row-end: 1;
+}
+
+.form_container {
+	background-color: #F8F8FF;
+	box-shadow: 0px 4px 4px silver;
+	grid-column: 2 / span 2;
+	grid-row-start: 2;
+	grid-row-end: 2;
+}
+
+.form_container h3 {
+	font-size: 1.2rem;
+	margin-top: 8px;
+}
+
+.header_text {
+	padding-top: 4rem;
+}
 .img_container {
     position: relative;
-    height: 100%;
-    width: 100%;
     grid-row: 1 / span 3;
+	
 }
 
 .img {
-    width: auto;
     height: 100%;
-    background-image: url(img/halie-west-25xggax4bSA-unsplash.jpg);
-    background-size: auto;
-    /* oder "100% auto;" um die volle Höhe und variable Breite des ersten Grid-Elements zu haben*/
+	width:100%
 }
 
 .credit {
@@ -57,4 +82,75 @@ h2 {
     left: 9rem;
     color: white;
     font-size: 0.8rem;
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+
+}
+
+.form div {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+
+.form label {
+margin-left: 1rem;
+  margin-bottom: 0.5rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.form input {
+  margin-left: 1rem;
+  margin-bottom: 0.2rem;
+  width: 75%;
+  border: 2px solid #E5E7EB;
+  border-radius: 4px;
+}
+
+.form input:focus {	
+  border: 2px solid green;
+}
+
+button {
+	font-family: Roboto, sans-serif;
+	font-size: 1.25rem;
+	background-color: #596D48;
+	color: white;
+	width: 12rem;
+	height: 3rem;
+	border: 2px solid #596D48;
+	border-radius: 8px;
+	margin-bottom: 10px;
+}
+
+button:hover {background-color: #3e8e41}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 2px 2px #666;
+  transform: translateY(2px);
+}
+
+.end_section {
+display: flex;
+flex-direction: column;
+align-content: center;
+padding: 25px;
+}
+
+.end_section a {
+	font-family: Roboto, sans-serif;
+}
+
+.link {
+	color: #3e8e41;
+}
+
+.end_section_text {
+	display:flex;
+	gap: 4px;
 }
