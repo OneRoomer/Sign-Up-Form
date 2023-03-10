@@ -2,91 +2,95 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign-Up Form</title>
-    <link rel="stylesheet" href="stylesheet.css">
-	
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-</style>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sign-Up Form</title>
+	<link rel="stylesheet" href="stylesheet.css">
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+	</style>
 </head>
 
 <body>
 
-    <div class="container">
+	<div class="container">
 
-        <div class="img_container">
-            <img class="img" src="./img/halie-west-25xggax4bSA-unsplash.jpg">
-            <div class="container_banner">
-                <img class="logo" src="img/odin-lined.png">
-                <h2>ODIN</h2>
-            </div>
-            <a class="credit">Photo by Halie West on Unsplash</a>
-        </div>
-		
-		
+		<div class="img_container">
+			<img class="img" src="./img/halie-west-25xggax4bSA-unsplash.jpg">
+			<div class="container_banner">
+				<img class="logo" src="img/odin-lined.png">
+				<h2>ODIN</h2>
+			</div>
+			<a class="credit">Photo by Halie West on Unsplash</a>
+		</div>
+
+
 		<div class="header_container">
-		
-		<div class="header_text">
-		<h3>This is not a real online service! You know you need something like this in your 
-		life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</h3>
-		<h3>You know you want to!</h3>
+
+			<div class="header_text">
+				<h3>This is not a real online service! You know you need something like this in your
+					life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</h3>
+				<h3>You know you want to!</h3>
+			</div>
 		</div>
+
+
+		<div class="form_container">
+
+			<h3> Let's do this!</h3>
+
+			<div class="form">
+				<form id="form" action="example.com/path" method="post">
+					<div>
+						<label for="first_name">First Name:</label>
+						<input type="text" id="first_name" placeholder="First Name" name="first_name" tabindex="1">
+					</div>
+					<div>
+						<label for="last_name">Last Name:</label>
+						<input type="text" id="last_name" placeholder="Last Name" name="last_name" tabindex="2">
+					</div>
+					<div>
+						<label for="email"> E-Mail:</label>
+						<input type="email" id="email" placeholder="example@example.XX" name="email"
+							pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="Please enter a valid email" tabindex="3" required>
+					</div>
+					<div>
+						<label for="phone_number">Phone Number:</label>
+						<input type="number" id="phone_number" placeholder="+XX 0123 4567890" name="phone_number"
+							tabindex="4">
+					</div>
+					<div>
+						<label for "password">Password (8 characters minimum)</label>
+						<input type="password" minlength="8" id="password" placeholder="Password..." name="password"
+							tabindex="5" class="error" required>
+					</div>
+					<div>
+						<label for="password_conf">Confirm Password:</label>
+						<input type="password" id="password_conf" placeholder="Password..." name="password_conf"
+							tabindex="6" class="error" required>
+					</div>
+				</form>
+			</div>
+
 		</div>
-		
-		
-		<div class="form_container"> 
-		
-		<h3> Let's do this!</h3>
-		
-		<div class="form">
-	<form id="form" action="example.com/path" method="post">
-		<div>
-		<label for="first_name">First Name:</label>
-		<input type="text" id="first_name" placeholder="First Name" name="first_name" tabindex="1">
-		</div>
-		<div>
-		<label for="last_name">Last Name:</label>
-		<input type="text" id="last_name" placeholder="Last Name" name="last_name" tabindex="2">
-		</div>
-		<div>
-		<label for="email"> E-Mail:</label>
-		<input type="email" id="email" placeholder="example@example.XX" name ="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="Please enter a valid email" tabindex="3" required >
-		</div>
-		<div>
-		<label for="phone_number">Phone Number:</label>
-		<input type="number" id="phone_number" placeholder="+XX 0123 4567890" name="phone_number" tabindex="4">
-		</div>
-		<div>
-		<label for "password">Password (8 characters minimum)</label>
-		<input type="password" minlength="8" id="password" placeholder="Password..." name="password" tabindex="5" class="error" required>
-		</div>
-		<div>
-		<label for="password_conf">Confirm Password:</label>
-		<input type="password"  id="password_conf" placeholder="Password..." name="password_conf" tabindex="6" class="error" required>
-		</div>
-	</form>
-		</div>
-		
-		</div>
-		
-		
+
+
 		<div class="end_section">
-		<button id ="submit" type="submit" class="bt_create">Create Account</button>
-		<div class="end_section_text">
-		<a>Already have an account?</a>
-		<a class="link" href="https://google.com"><b>Log In</b></a>
+			<button id="submit" type="submit" class="bt_create">Create Account</button>
+			<div class="end_section_text">
+				<a>Already have an account?</a>
+				<a class="link" href="https://google.com"><b>Log In</b></a>
+			</div>
 		</div>
-		</div>
-		
-		
-		
-    </div>
 
 
-    <script src = "app.js"></script>
+
+	</div>
+
+
+	<script src="app.js"></script>
 </body>
 
 </html>
